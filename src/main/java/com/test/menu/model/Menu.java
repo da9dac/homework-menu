@@ -52,6 +52,18 @@ public class Menu {
 	@Column(name = "UPDA_DT", insertable = false)
 	private LocalDateTime updaDt;
 
+	public Menu() {
+	}
+
+	public Menu(int menuId, String menuNm, int sort, int uprMenuId, String url, String regiUser) {
+		this.menuId = menuId;
+		this.menuNm = menuNm;
+		this.sort = sort;
+		this.uprMenuId = uprMenuId;
+		this.url = url;
+		this.regiUser = regiUser;
+	}
+
 	public int getMenuId() {
 		return menuId;
 	}
@@ -90,5 +102,45 @@ public class Menu {
 
 	public LocalDateTime getUpdaDt() {
 		return updaDt;
+	}
+
+	public void setMenuId(int menuId) {
+		this.menuId = menuId;
+	}
+
+	public void setMenuNm(String menuNm) {
+		this.menuNm = menuNm;
+	}
+
+	public void setSort(int sort) {
+		this.sort = sort;
+	}
+
+	public void setUprMenuId(int uprMenuId) {
+		this.uprMenuId = uprMenuId;
+	}
+
+	public void setUrl(String url) {
+		this.url = url;
+	}
+
+	public void setUseYn(String useYn) {
+		this.useYn = useYn;
+	}
+
+	public void setRegiUser(String regiUser) {
+		this.regiUser = regiUser;
+	}
+
+	public void setRegiDt(LocalDateTime regiDt) {
+		this.regiDt = regiDt;
+	}
+
+	public void setUpdaUser(String updaUser) {
+		this.updaUser = updaUser;
+	}
+
+	public void setUpdaDt(LocalDateTime updaDt) {
+		this.updaDt = updaDt;
 	}
 }
